@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckNGo test task</title>
+    <link rel="stylesheet" href="../styles/paymentForm.css">
+</head>
+<body>
+
+<div class="container">
+    <form id="dataForm">
+        <div class="form-group">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="buttons">
+                <button id="userTableAddBtn" style="background-color: blue; color: white" type="button">Add</button>
+            </div>
+        </div>
+
+        <div>
+            Users to pay:
+            <table class="users-table" id="usersTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Amount</th>
+                </tr>
+            </table>
+
+            <div class="buttons">
+                <button id="userTableResetBtn" style="background-color: red; color: white" type="button">Reset</button>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="userTableSaveBtn" style="margin-top: 50px; background-color: green; color: white" type="button">Save</button>
+        </div>
+    </form>
+</div>
+
+<script src="../js/paymentForm.js"></script>
+
+</body>
+</html>
